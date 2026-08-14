@@ -1,0 +1,1 @@
+Add the final UI screenshots here before submission: dashboard.png, role-explorer.png, graph-explorer.png, error-state.png. The README links to these screenshots after the app is run against CognoDB.

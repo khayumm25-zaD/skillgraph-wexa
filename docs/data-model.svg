@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620">
+  <style>
+    .node{fill:#fff;stroke:#6672e8;stroke-width:2}.skill{stroke:#49a56f}.company{stroke:#e1a04c}.resource{stroke:#5d99e6}.project{stroke:#5d99e6}.text{font:600 17px Arial;fill:#273047;text-anchor:middle}.rel{font:12px Arial;fill:#7c8799;text-anchor:middle}.line{stroke:#cbd2df;stroke-width:2;marker-end:url(#arrow)}
+  </style>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="3.5" orient="auto"><polygon points="0 0,8 3.5,0 7" fill="#cbd2df"/></marker></defs>
+  <rect width="1100" height="620" fill="#f7f8fb"/>
+  <text x="550" y="48" class="text" style="font-size:26px">SkillGraph — Graph Data Model</text>
+  <rect x="75" y="110" rx="18" ry="18" width="180" height="70" class="node"/>
+  <text x="165" y="152" class="text">Candidate</text>
+  <rect x="460" y="100" rx="18" ry="18" width="180" height="70" class="node"/>
+  <text x="550" y="142" class="text">Role</text>
+  <rect x="850" y="110" rx="18" ry="18" width="180" height="70" class="node company"/>
+  <text x="940" y="152" class="text">Company</text>
+  <rect x="250" y="300" rx="18" ry="18" width="180" height="70" class="node project"/>
+  <text x="340" y="342" class="text">Project</text>
+  <rect x="460" y="300" rx="18" ry="18" width="180" height="70" class="node skill"/>
+  <text x="550" y="342" class="text">Skill</text>
+  <rect x="680" y="300" rx="18" ry="18" width="180" height="70" class="node resource"/>
+  <text x="770" y="342" class="text">Learning Resource</text>
+  <rect x="460" y="500" rx="18" ry="18" width="180" height="70" class="node"/>
+  <text x="550" y="542" class="text">Role</text>
+  <line x1="255" y1="145" x2="460" y2="135" class="line"/><text x="355" y="120" class="rel">candidate target</text>
+  <line x1="165" y1="180" x2="320" y2="300" class="line"/><text x="218" y="245" class="rel">WORKED_ON</text>
+  <line x1="430" y1="335" x2="460" y2="335" class="line"/><text x="445" y="320" class="rel">DEMONSTRATES</text>
+  <line x1="550" y1="170" x2="550" y2="300" class="line"/><text x="600" y="240" class="rel">REQUIRES</text>
+  <line x1="640" y1="335" x2="680" y2="335" class="line"/><text x="660" y="320" class="rel">TEACHES</text>
+  <line x1="640" y1="135" x2="850" y2="145" class="line"/><text x="745" y="120" class="rel">HIRING_FOR</text>
+  <line x1="550" y1="370" x2="550" y2="500" class="line"/><text x="610" y="440" class="rel">NEXT_STEP_TO</text>
+  <text x="550" y="600" class="rel">Core traversal: Candidate → Project → Skill ← Role</text>
+</svg>
