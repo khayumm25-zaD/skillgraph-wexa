@@ -1,17 +1,9 @@
-const path = require("path");
 const dotenv = require("dotenv");
 
-const envPath = path.resolve(__dirname, "../../.env");
-
-const result = dotenv.config({
-  path: envPath
-});
-
-if (result.error) {
-  throw new Error(
-    `Could not load environment file: ${envPath}`
-  );
-}
+// Load .env when running locally.
+// On Render/production, environment variables are provided
+// directly by the hosting platform.
+dotenv.config();
 
 const requiredVariables = [
   "COGNODB_URI",
